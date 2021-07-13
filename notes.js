@@ -58,3 +58,14 @@ console.log(superClone); // r => { a: 'a', b: 'b', c: { deep: 'try and copy me' 
 // HIGHER ORDER FUNCTIONS
 console.log(`
 
+  HIGHER ORDER FUNCTIONS
+          
+            `);
+const multiplyBy = (num1) => {
+  return (num2) => {
+    return num1 * num2;
+  };
+};
+
+const multiplyByFive = multiplyBy(5);
+console.log(multiplyByFive(5));
