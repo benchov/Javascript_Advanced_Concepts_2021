@@ -69,3 +69,10 @@ const multiplyBy = (num1) => {
 
 const multiplyByFive = multiplyBy(5);
 console.log(multiplyByFive(5));
+
+Date.prototype.lastYear = () => {
+  console.log(this);
+  return this.getFullYear - 1;
+};
+
+new Date().lastYear();
