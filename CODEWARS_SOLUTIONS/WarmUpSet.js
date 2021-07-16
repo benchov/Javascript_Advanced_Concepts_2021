@@ -17,3 +17,18 @@ function multiTable(n) {
     .map((_, i) => `${i + 1} * ${n} = ${n * i + n}`)
     .join("\n");
 }
+
+// Convert number to reversed array of digits
+/* _________________________________ */
+// my solution =>
+function digitize(n) {
+  return ("" + n)
+    .split("")
+    .map((num) => parseInt(num))
+    .reverse();
+}
+
+// best solution =>
+function digitize(n) {
+  return String(n).split("").map(Number).reverse();
+}
